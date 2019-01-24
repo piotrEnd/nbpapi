@@ -2,7 +2,7 @@
 
 class Api {
    async queryApi(currency) {
-      const url = await fetch(`http://api.nbp.pl/api/exchangerates/rates/a/${currency}/`);
+      const url = await fetch(`https://api.nbp.pl/api/exchangerates/rates/a/${currency}/`);
 
       const result = await url.json();
       return {
@@ -12,7 +12,7 @@ class Api {
 
    async getCurrenciesList() {
       // delay until downloaded
-      const url = await fetch('http://api.nbp.pl/api/exchangerates/tables/a/');
+      const url = await fetch('https://api.nbp.pl/api/exchangerates/tables/a/');
 
       const currencies = await url.json();
       return {

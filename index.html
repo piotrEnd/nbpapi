@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>NBP API</title>
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+         crossorigin="anonymous"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+
+   <body>
+      <div class="container">
+         <h2 class="is-size-3 has-text-centered has-text-info">&#8251; NBP Web API &#8251;</h3>
+         <div id="form">
+            <div class="control has-icons-left ">
+               <div class="select is-large is-success is-fullwidth">
+                  <select id="currency" class="is-rounded has-text-centered ">
+
+                  </select>
+               </div>
+               <span class="icon is-left"><i class="far fa-money-bill-alt"></i></span>
+               <p class="help has-text-right">select currency</p>
+            </div>
+
+            <div class="control is-info">
+               <input
+                  id="amount"
+                  class="input is-large is-success"
+                  type="number"
+                  placeholder="input amount"
+                  step=".1"
+                  min="0"
+                  autofocus
+               />
+               <p class="help has-text-left">type amount in PLN, use dot for floats</p>
+            </div>
+
+            <div class="control ">
+               <button
+                  class="control button is-info is-outlined is-large is-outlined is-rounded is-fullwidth"
+               >
+                  <span>calculate</span> <span class="icon"><i class="fas fa-calculator"></i></span>
+               </button>
+            </div>
+         </div>
+         <div class=" control has-text-centered" id="feedback"></div>
+         <div class=" control has-text-centered" id="result"></div>
+         <footer class="has-text-centered ">
+            <a class="has-text-grey-darker" href="mailto:piotrend@gmail.com">&copy; 2019 by piotrEnd</a>
+         </footer>
+      </div>
+
+      <script src="api.js"></script>
+      <script src="ui.js"></script>
+      <script src="app.js"></script>
+   </body>
+</html>

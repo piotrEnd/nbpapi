@@ -28,6 +28,11 @@ body {
    box-shadow: 2px 2px 4px 0px rgba(35, 209, 96, 0.75);
 }
 
+.radios {
+   font-size: 1.5rem;
+   text-align: center;
+}
+
 .button {
    transform: scale(1);
    transition: transform 0.25s;

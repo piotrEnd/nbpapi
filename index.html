@@ -41,7 +41,29 @@
                   min="0"
                   autofocus
                />
-               <p class="help has-text-left">type amount in PLN, use dot for floats</p>
+               <p class="help has-text-left" id="helperText">type amount in EUR, use dot for floats</p>
+            </div>
+
+            <div class="control">
+               <div class="columns radios">
+                  <div class="column ">
+                     <label class="radio is-pulled-left" id="other">
+                        <input type="radio" value="other" name="checked" checked>
+                           EUR
+                     </label>
+                  </div>
+
+                  <div class="column icon-centered">
+                        <i class="fas fa-exchange-alt"></i>
+                  </div>
+
+                  <div class="column">
+                     <label class="radio is-pulled-right">
+                        <input type="radio" value="pln" name="checked"  >
+                           PLN
+                     </label>
+                  </div>
+               </div>
             </div>
 
             <div class="control ">
